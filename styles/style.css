@@ -28,7 +28,9 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    /* background-color: var(--color2); */
+    background-image: url('../assets/wintry-2915190.svg');
+
 }
 
 main {
@@ -37,10 +39,11 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+
 }
 
 section {
-    background-color: var(--color5);
+    /* background-color: var(--color5); */
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -50,7 +53,7 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    /* border: solid 2px var(--color1); */
 }
 
 header {
@@ -88,4 +91,39 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+
+
+
+.game-Section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.good-Player {
+    margin-right: 30%;
+
+}
+
+.good-Player img {
+    width: 90%;
+    height: 20%;
+}
+
+.evil-Goblins {
+    width: 100%;
+    height: 100%;
+
+}
+
+.evil-Goblin {
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../assets/dragons-head-310697.svg')
 }
