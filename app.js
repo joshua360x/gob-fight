@@ -29,7 +29,7 @@ let newGob = [
     }
 ];
 let defeated = 0;
-let playerHealth = 1;
+let playerHealth = 10;
 
 // let defeatedGoblin = [
 //     {
