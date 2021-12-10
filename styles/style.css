@@ -1,5 +1,5 @@
 
-body {
+body, html {
     /* feel free to update these css variables for a quick theme */
     
     --color1: white;
@@ -30,6 +30,7 @@ body {
     font-family: 'Titillium Web', sans-serif;
     /* background-color: var(--color2); */
     background-image: url('../assets/wintry-2915190.svg');
+    height: 100%;
 
 }
 
@@ -114,16 +115,44 @@ footer {
 }
 
 .evil-Goblins {
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
+    /* background-color: aqua; */
 
 }
 
 .evil-Goblin {
-    width: 200px;
-    height: 200px;
-    background-repeat: no-repeat;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    /* background-color: aqua; */
+    /* background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    background-image: url('../assets/dragons-head-310697.svg')
+    background-size: cover; */
+    /* background-image: url('../assets/dragons-head-310697.svg');
+    background-color: aqua; */
+}
+
+.evil-Goblinn {
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    background-color: aqua;
+    margin: 10px;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    /* background-image: url('../assets/dragons-head-310697.svg');
+    background-color: aqua; */
+}
+
+.white {
+    /* background-color: aqua; */
+    width: fit-content;
+    height: 100%;
+}
+
+.defeated {
+    margin: 20px;
+    background-color: wheat;
 }
