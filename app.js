@@ -17,19 +17,19 @@ const goblinDefeated = document.querySelector('.numberDefeated');
 let newGob = [
     {
         name: 'Curry',
-        hp: 10
+        hp: 1
     },
     {
         name: 'pizza',
-        hp: 15
+        hp: 5
     },
     {
         name: 'yoyo',
-        hp: 20
+        hp: 2
     }
 ];
 let defeated = 0;
-let playerHealth = 1;
+let playerHealth = 10;
 
 // let defeatedGoblin = [
 //     {
@@ -42,10 +42,10 @@ let playerHealth = 1;
 goblinForm.addEventListener('submit', (e) => {
     e.preventDefault();
     let goblinNew = new FormData(goblinForm);
-    let name = goblinNew.get('goblin-name');
+    let name = `${goblinNew.get('goblin-name') === '' ? 'Guy' + (Math.ceil(Math.random() * 100)) : goblinNew.get('goblin-name')}`;
     let obj = {
         name,
-        hp: (Math.ceil(Math.random() * 10))
+        hp: (Math.ceil(Math.random() * 5))
     };
 
     newGob.push(obj);
