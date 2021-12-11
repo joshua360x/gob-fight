@@ -81,6 +81,13 @@ header img {
 
 p {
     margin: var(--gutter);
+    background-color: antiquewhite;
+    font-size: 20px;
+    margin-top: -0.02px;
+}
+h2 {
+    background-color: bisque;
+    padding: 1px 10px;
 }
   
 footer {
@@ -105,7 +112,7 @@ footer {
 }
 
 .good-Player {
-    margin-right: 30%;
+    margin-right: 20%;
 
 }
 
@@ -131,19 +138,21 @@ footer {
     background-size: cover; */
     /* background-image: url('../assets/dragons-head-310697.svg');
     background-color: aqua; */
+    
 }
 
 .evil-Goblinn {
     width: 250px;
     height: 300px;
     text-align: center;
-    background-color: aqua;
+    border: solid 2px blue;
     margin: 10px;
     /* background-repeat: no-repeat;
     background-position: center;
     background-size: cover; */
     /* background-image: url('../assets/dragons-head-310697.svg');
     background-color: aqua; */
+    background-color: rgb(185, 215, 241);
 }
 
 .white {
@@ -155,4 +164,15 @@ footer {
 .defeated {
     margin: 20px;
     background-color: wheat;
+}
+
+.false {
+    pointer-events: none;
+    cursor: none;
+    background-color: grey;
+}
+
+.numberDefeated {
+    color: red;
+
 }

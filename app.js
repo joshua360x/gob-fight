@@ -42,7 +42,7 @@ let playerHealth = 10;
 goblinForm.addEventListener('submit', (e) => {
     e.preventDefault();
     let goblinNew = new FormData(goblinForm);
-    let name = `${goblinNew.get('goblin-name') === '' ? 'Guy' + (Math.ceil(Math.random() * 100)) : goblinNew.get('goblin-name')}`;
+    let name = `${goblinNew.get('goblin-name') === true ? goblinNew.get('goblin-name') : 'Goblin' + (Math.ceil(Math.random() * 200))}`;
     let obj = {
         name,
         hp: (Math.ceil(Math.random() * 5))
@@ -70,9 +70,10 @@ function displayGodblins() {
                     defeated++;
                     goblinDefeated.textContent = defeated;
                     alert(`you have defeated ${goblin.name}`);
+                    
                     displayGodblins(); 
                 }
-                
+
                 if ((Math.random() * 5) > 3) {
                     alert('player has been hit');
                     playerHealth--;

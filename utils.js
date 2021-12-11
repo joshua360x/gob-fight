@@ -6,6 +6,9 @@ export function renderGoblin(data) {
     let pHP = document.createElement('p');
     img.classList.add('evil-Goblin');
     div.classList.add('evil-Goblinn');
+    if (data.hp <= 0) {
+        div.classList.add('false');
+    }
   // console.log("🚀 ~ file: app.js ~ line 49 ~ displayGodblins ~ goblin", data)
     pName.textContent = data.name;
     pHP.textContent = data.hp;
