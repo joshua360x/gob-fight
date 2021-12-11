@@ -76,7 +76,7 @@ function displayGodblins() {
 
                 if ((Math.random() * 5) > 3) {
                     alert('player has been hit');
-                    playerHealth--;
+                    playerHealth = playerHealth - (Math.ceil(Math.random() * 2));
                     playerHP.textContent = playerHealth;
                     if (playerHealth === 0) {
                         alert('Game Over');
